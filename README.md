@@ -1,8 +1,4 @@
-# CMPE252
-Chatbot Project
-
-
-
+# CMPE252- Chatbot Project
 
 # Canvas-Chatbot
 
@@ -13,7 +9,7 @@ Currently supported API calls to retrieve race information are:
   2. Weather API
  
 
-## *Rasa Version Used*
+## Rasa Version Used
 
 pc:/PROJECT$ rasa --version
 Rasa Version      :         3.3.1
@@ -21,6 +17,14 @@ Minimum Compatible Version: 3.3.0
 Rasa X Version    :         None
 Python Version    :         3.8.15
 
+
+## Mongo DB usage:
+
+Link: mongodb+srv://adityasahu:Bond007*@cluster0.z9zia26.mongodb.net/test
+Authentication: username-adityasahu , password- Bond007*
+
+ * MongoDB has been used in this project to store the Username, in the first step, bot asks the user to input its name, so it gets stored in database.
+ * Also, for some of the actions, it directly fetches data from DB and utters on slack.
 
 ## Instructions to run
 
@@ -61,13 +65,14 @@ rasa shell                  # This will run an interactive terminal for you to i
 
 
 9. There you have it. You can now interact with the chatbot as you please!
+#### Please make a note that , you would need to login in into Canvas via Duo authentication as soon as the bot starts (with rasa run actions).
 
 10. If you wish to deploy the bot on Slack, you can follow [this](https://rasa.com/docs/rasa/connectors/slack/) link. 
 
 
 ## Conversation Flow
 
-1. Grades API flow:
+#### 1. Grades API flow:
 
 Your input ->  Hello
 
@@ -91,8 +96,9 @@ Your input ->  show my grades
                                               8                        Assignments      0.00 / 0.00
                                               9                              Total  160.00 / 175.00
 
+It uses my own build API, which is made with help of selenium and Beautiful Soup to extract data from canvas
 
-2. Weather API flow:
+#### 2. Weather API flow:
 
 Your input ->  Hello
 
@@ -109,9 +115,32 @@ Your input ->  Whats the waether today
 Your input ->  Which city you want to check for?
 
                                         Bot -> Today's temperature is 5 degree Celcius.
+This uses Weather API to fetch data
 
+#### 3. Announcement Flow:
 
-3. Multi-turn conversations:
+Your input ->  Hello
+
+                                        Bot -> Hello! I am Canvas bot! Please share your name?
+
+Your input ->  Aditya
+
+                                        Bot -> Hey, Aditya how can I help you!
+
+Your input ->  Show me the recent announcements
+
+                                        Bot -> Shubhangi & Sumit
+
+Your input ->  Show me mail for ISA
+
+                                        Bot -> shubhangi.manojkumar@sjsu.edu & sumit.dutta@sjsu.edu
+
+Your input ->  Tell me location for this class
+
+                                        Bot -> Dear all, Please fill out the course evaluations and share with us what elements of the course you liked and suggestions for improving the learning experience.  Your feedback is very useful in shaping course format and teaching approaches. Thanks! Regards, Jorjeta                     Dear all, I am out sick and so we will have our class tomorrow (Dec. 1) over Zoom. Regards, Jorjeta        
+Dear all, I need to cancel my office hours today since I am out sick.  Please join my office hours tomorrow or if the times don't work for you, please contact me to set up an appointment. Regards, Jorjeta
+
+#### 4. Multi-turn conversations:
 
 Your input ->  Hello
 
@@ -129,18 +158,24 @@ Your input ->  Show me mail for ISA
 
                                         Bot -> shubhangi.manojkumar@sjsu.edu & sumit.dutta@sjsu.edu
 
-### Workflow of This Chatbot
+Your input ->  Tell me location for this class
+
+                                        Bot -> Tue & Th 10:30-11:45am PT in Clark Building 222
+                                        
+These data is stored in MongoDB , so the bot fetches the data from MongoDB using actions defined in action.py
+
+## Workflow of This Chatbot
 
 ![Untitled (2)](https://user-images.githubusercontent.com/40825882/206553026-971d5d61-ac4d-4bf1-91cc-1bb35ae225be.jpg)
 
 
-#### Visualization of Rasa Chatbot
+## Visualization of Rasa Chatbot
 This is a visualization of the Dialog FLow, this chatbbot
 
 ![Rasa visualise](https://user-images.githubusercontent.com/40825882/206408103-a67f311f-e601-4fe1-9575-3aba2761a4af.png)
 
 
-### Open/Current Issues in Chatbot
+## Open/Current Issues in Chatbot
 
 *  Dynamic page of Canvas makes it difficult to fetch the proper information that we need to display for users.
 
