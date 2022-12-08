@@ -12,15 +12,20 @@ Currently supported API calls to retrieve race information are:
 ## Rasa Version Used
 
 pc:/PROJECT$ rasa --version
+
 Rasa Version      :         3.3.1
+
 Minimum Compatible Version: 3.3.0
+
 Rasa X Version    :         None
+
 Python Version    :         3.8.15
 
 
 ## Mongo DB usage:
 
 Link: mongodb+srv://adityasahu:Bond007*@cluster0.z9zia26.mongodb.net/test
+
 Authentication: username-adityasahu , password- Bond007*
 
  * MongoDB has been used in this project to store the Username, in the first step, bot asks the user to input its name, so it gets stored in database.
@@ -36,7 +41,7 @@ python -m venv venv         # Create virtual env.
 source venv/bin/activate    # Activate virtual env.
 
 
-2. Make sure you have all the python dependencies installed as mentioned in the provided [requirements.txt](requirements.txt) file. (Created using pip freeze in the venv itself)
+2. Make sure you have all the python dependencies installed as mentioned in the provided requirements.txt file. (Created using pip freeze in the venv itself)
 
 3. If rasa is not installed, then install rasa using:
 
@@ -47,14 +52,14 @@ python -m pip install rasa  # This will install latest version of rasa
 
 python -m rasa init         # Will create an initial rasa project
 
-5. You can then replace the files from this repo (in [source](Source) folder) to your local project. Make sure you are using rasa 3.1.0 or above. Ensure that all files are properly placed in the respective folders in the local project. You can simply cut-paste the files from source to your project's root folder.
+5. You can then replace the files from this repo in source to your local project. Make sure you are using rasa 3.1.0 or above. Ensure that all files are properly placed in the respective folders in the local project. You can simply cut-paste the files from source to your project's root folder.
 
 6. Next step is to train the rasa model using the new files. Make sure you are in the virtual environment. This can be done using the following command:
 
 rasa train                  # This will train the model
 
 
-7. To make API calls which are defined in actions.py file in the [actions](Source/actions) folder, you need to run a parallel terminal with the same virtual environment running. Use the same process as defined in step 1 above. Then to run the action file, use the following command:
+7. To make API calls which are defined in actions.py file in the actions folder, you need to run a parallel terminal with the same virtual environment running. Use the same process as defined in step 1 above. Then to run the action file, use the following command:
 
 rasa run actions            # This will run the actions server
 
@@ -65,6 +70,7 @@ rasa shell                  # This will run an interactive terminal for you to i
 
 
 9. There you have it. You can now interact with the chatbot as you please!
+
 #### Please make a note that , you would need to login in into Canvas via Duo authentication as soon as the bot starts (with rasa run actions).
 
 10. If you wish to deploy the bot on Slack, you can follow [this](https://rasa.com/docs/rasa/connectors/slack/) link. 
@@ -135,7 +141,7 @@ Your input ->  Show me mail for ISA
 
                                         Bot -> shubhangi.manojkumar@sjsu.edu & sumit.dutta@sjsu.edu
 
-Your input ->  Tell me location for this class
+Your input ->  Show me some recent announcements
 
                                         Bot -> Dear all, Please fill out the course evaluations and share with us what elements of the course you liked and suggestions for improving the learning experience.  Your feedback is very useful in shaping course format and teaching approaches. Thanks! Regards, Jorjeta                     Dear all, I am out sick and so we will have our class tomorrow (Dec. 1) over Zoom. Regards, Jorjeta        
 Dear all, I need to cancel my office hours today since I am out sick.  Please join my office hours tomorrow or if the times don't work for you, please contact me to set up an appointment. Regards, Jorjeta
@@ -170,6 +176,7 @@ These data is stored in MongoDB , so the bot fetches the data from MongoDB using
 
 
 ## Visualization of Rasa Chatbot
+
 This is a visualization of the Dialog FLow, this chatbbot
 
 ![Rasa visualise](https://user-images.githubusercontent.com/40825882/206408103-a67f311f-e601-4fe1-9575-3aba2761a4af.png)
