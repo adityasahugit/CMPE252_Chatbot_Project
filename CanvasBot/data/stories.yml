@@ -1,0 +1,94 @@
+stories:
+ - story: greet and goodbye
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: goodbye
+   - action: utter_goodbye
+   
+ - story: greet and grades
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: grade
+   - action: action_grade
+
+ - story: greet and instructor 
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: instructor
+   - action: action_instructor
+
+ - story: greet and instructor_mail
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: instructor_mail
+   - action: action_instructor_mail
+
+ - story: greet and isa
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: isa
+   - action: action_isa
+
+ - story: greet and isa_mail
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: isa_mail
+   - action: action_isa_mail
+
+ - story: greet and location
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: location
+   - action: action_location
+
+ - story: greet and weather
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: weather
+   - action: utter_city
+   - intent: city 
+   - action: action_weather_api
+
+ - story: greet and isa
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: isa
+   - action: action_isa
+   - intent: isa_mail
+   - action: action_isa_mail
+
+ - story: greet and annoucment
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: start
+   - action: action_user
+   - intent: announcement
+   - action: action_announcement

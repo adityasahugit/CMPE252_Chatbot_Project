@@ -1,0 +1,67 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- start
+- repeat
+- affirm
+- deny
+- assignment
+- instructor
+- instructor_mail
+- grade
+- goodbye
+- location
+- isa_mail
+- isa
+- weather 
+- city
+- announcement
+
+# slots:
+#   email:
+#     type: text
+#     influence_conversation: false
+#     mappings: []
+responses:
+  utter_greet:
+  - text: |
+      Hello! I am Canvas bot! Please share your name? 
+  utter_goodbye:
+  - text: |
+      Thank you. Have a nice day!
+  utter_city:
+  - text: |
+      Which city you want to check for?
+  utter_temp:
+  - text: |
+      Today's temperature is {temp} degree Celcius.
+  utter_start:
+  - text: |
+      Hey, {temp} how can I help you!
+  utter_please_rephrase:
+  - text: |
+      I'm sorry, I didn't quite understand that. Could you rephrase?
+
+
+
+actions:
+# - '...'
+- action_grade
+- action_instructor
+- action_instructor_mail
+- action_location
+- action_isa
+- action_isa_mail
+- action_weather_api
+- action_user
+- action_announcement
+
+
+# - utter_subscribed
+# forms:
+#   newsletter_form:
+#     required_slots:
+#     - email

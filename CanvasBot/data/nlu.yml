@@ -1,0 +1,496 @@
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hey!
+    - Hallo
+    - Good day
+    - Good morning
+    - Hey
+    - Hi bot
+    - Hey bot
+    - Hello
+    - hi again
+    - hi there
+    - greetings
+    - hello robot
+    - heeey
+    - hi hi
+    - hey
+    - hey hey
+    - hello there
+    - hii
+    - hello
+    - hola
+    - hi?
+    - hey bot!
+    - hello friend
+    - good morning
+    - hii
+    - hello sweet boy
+    - hey there
+    - Hello
+    - hello
+    - helloooo
+    - hello?
+    - heya
+    - howdy
+    - Hellllooooooo
+    - whats up
+    - heyy
+
+
+
+- intent: repeat
+  examples: |
+    - Repeat
+    - Repeat it
+    - Repeat once
+    - Please Repeat once
+    - pls Repeat
+    - Can you repeat
+    - Can you repeat once
+    - what did i said now
+    - can you pls repeat
+    - i forgot the information. tell me the details.
+    - tell me again
+    - can you tell me again
+    - tell me again
+    - can you repeat
+    - can you tell me the details
+    - sorry i did not get you
+    - can you tell again
+    - repeat what you said
+    - can you say it again
+    - hello, can you repeat
+    - please repeat
+    - i missed what you said
+    - what did you say
+    - sorry can you repeat
+    - please repeat what you said
+    - were you telling something
+    - sorry did you say something
+    - sorry did you say something please repeat
+
+
+- intent: affirm
+  examples: |
+    - Yes
+    - Yes yes
+    - Yes positively 
+    - Yes surely
+    - Yes definitely
+    - Yes i will 
+    - Yes why not
+    - Yes i would like to
+    - yeah sure
+    - yaa
+    - ya
+    - of course
+    - sure
+    - yeah
+    - ok
+    - cool
+    - yep
+    - yep, will do thank you
+    - I'm sure I will!
+    - awesome!
+    - Yes
+    - accept
+    - i accept
+    - ok i accept
+    - ok cool
+    - alright
+    - i will
+    - oki doki
+    - yes please
+    - yep if i have to
+    - amazing
+    - confirm
+    - nice
+    - definitely yes without a doubt
+    - yas
+    - yup
+    - perfect
+    - sure thing
+    - absolutely
+    - Sure
+    - hm, i'd like that
+    - sure!
+    - yes i accept
+    - amazing!
+    - how nice!
+    - cool!
+    - yay
+    - yes accept please
+    - great
+    - okay
+    - fine
+    - yes
+    - of course
+    - sure
+    - yeah
+    - ok
+    - cool
+    - yep
+    - yep, will do thank you
+    - I'm sure I will!
+    - awesome!
+    - Yes
+    - accept
+    - I accept
+    - i accept
+    - ok i accept
+    - ok cool
+    - alright
+    - i will!
+    - oki doki
+    - yes please
+    - yes please!
+    - amazing
+    - confirm
+    - nice
+    - definitely
+    - yas
+    - yup
+    - perfect 
+    - sure thing
+    - absolutely
+    - Sure
+    - hm, i'd like that
+    - sure!
+    - yes i accept
+    - Sweet
+    - amazing!
+    - how nice!
+    - cool!
+    - yay
+    - yes accept please
+    - great
+    - cool
+    - yes
+    - fine
+    - yes i am
+    - yupe
+    - ya
+    - available
+    - Available
+
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - no!
+    - noo
+    - unsure about that
+    - unsure
+    - never
+    - cannot decide that now
+    - i do not confirm
+    - No
+    - definitely not
+    - never
+    - absolutely not
+    - i dont think so
+    - i'm afraid not
+    - no sir
+    - no ma'am
+    - no way
+    - no sorry
+    - No, not really.
+    - nah not for me
+    - nah
+    - no and no again
+    - no go
+    - no thanks
+    - decline
+    - i decline
+    - no i dont accept
+    - no!!!!
+    - no you did it
+    - no i can't
+    - i'm not sure
+    - NEIN
+    - nein
+    - not really
+    - i guess it means no
+    - i dont want to
+    - i dont want to book
+    - i dont want either of those
+    - no thanks
+    - neither of these
+    - no i dont want to 
+    - nope i dont want to 
+    - i dont
+    - no i dont want to
+    - no thankyou
+    - not
+    - i will not
+    - will not 
+    - not done 
+    - cancel
+    - no no i am not sure, maybe cancel  it for now
+    - nope
+    - sorry
+    - cancel it
+    - no i don't want 
+    - no no
+    - nope
+    - sorry but 
+    - can't
+    - cannot
+    - cannot
+    - no way
+
+- intent: assignment
+  examples: |
+    - assignment
+    - tell about assignment
+    - new assignment
+    - my assignments
+    - assignments
+    - new assignments
+    - show assignment
+    - show me assignments
+    - show my assignment
+    - what about assignments
+    - assignment today
+    - due assignment
+
+- intent: grade
+  examples: |
+    - grade
+    - tell about grade
+    - new grade
+    - my grades
+    - grades
+    - new grades
+    - show grade
+    - show me grades
+    - show my grades
+    - what about grades
+    - grade today
+    - marks
+    - my marks 
+    - show marks 
+    - tell about marks
+    - new marks
+    - my marks
+    - marks scored
+    - new marks
+    - show marks
+    - show me marks
+    - show my marks
+    - what about marks
+    - marks today
+    - score
+    - my score 
+    - show scores 
+    - tell about my score
+    - new marks
+    - my marks
+    - grades
+    - new marks
+    - show marks
+    - show me marks
+    - show my marks
+    - what about marks
+    - marks today
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: instructor
+  examples: |
+    - instructor
+    - tell me professor for this class
+    - tell about instructor
+    - who is our instructor 
+    - professor
+    - tell about professor
+    - who is our professor 
+    - teacher
+    - who is teaching 
+    - who is teaching this class
+    - which professor is teaching this class
+    - whos the professor
+    - who's the prof
+    - who is our teacher
+    - name of instructor
+    - name of teacher
+    - name of professor
+    - tell about teacher
+    - class instructor
+    - class teacher
+    - course instructor
+    - who is course instructor
+    - who is course instructor for this class
+
+- intent: instructor_mail
+  examples: |
+    - email professor
+    - instructor mail
+    - instructor email
+    - tell about instructor email
+    - what is instructor email
+    - what is professor email
+    - what is teacher email
+    - professor mail
+    - tell me about professor
+    - Mail id of professor
+    - email id of professor
+    - Mail id of instructor
+    - mail id of teacher
+    - mail of instructor
+    - email of teacher
+    - mail of professor
+    - can you tell me mail id of teacher
+    - can you tell me mail of instructor
+    - can you tell the email of teacher
+
+- intent: isa
+  examples: |
+    - isa
+    - tell about ISA
+    - who is our Teaching assistant 
+    - Teaching assistant
+    - tell about Teaching assistant 
+    - who is our TA 
+    - TA
+    - who is TA 
+    - who is TA for this class
+    - tell about Teaching assistant 
+    - who is our Teaching assistant 
+    - Teaching assistant
+    - tell about Teaching assistant 
+    - who is our ISA 
+    - ISA
+    - who are our ISAs
+    - who is ISA for this class
+    - whos the ISA
+    - who's the ISA
+    - who is our ISA
+    - name of ISA
+    - name of TA
+    - name of Teaching assistant
+    - tell about class TA
+    - class TA
+    - class ISA
+    - course TA
+    - who is course ISA
+    - who is TA for this class
+    - who is ISA for this class    
+    - who is teaching assistant for this class
+
+- intent: isa_mail
+  examples: |
+    - tell me mail id of ISA
+    - tell me mail id of TA
+    - tell me mail id of Teaching assistant
+    - isa mail
+    - tell about ISA mail id
+    - who is our Teaching assistant mail id
+    - Teaching assistant mail
+    - tell about Teaching assistant mail
+    - what is our TA mail
+    - TA mail
+    - what is TA mailid
+    - what is TA mail id for this class
+    - tell about Teaching assistant email
+    - what is our Teaching assistant mailid 
+    - Teaching assistant mail id
+    - tell about Teaching assistant mail
+    - what is our ISA mail
+    - ISA mail
+    - what are our ISAs mail
+    - what is ISA mail id for this class
+    - what is the ISA email info
+    - what's the TA email
+    - what is our ISA email 
+    - email of ISA
+    - email of TA
+    - email of Teaching assistant
+
+- intent: location
+  examples: |
+    - whats the location class
+    - whats the timing of class
+    - what are the class timings
+    - what is location of class
+    - tell me location
+    - in which building is our class
+    - class timings
+    - class location
+    - tell me timings for this class
+    - tell me location of this class
+    - timings
+    - location
+    - location and timing
+    - building for class
+    - when does class happen
+    - where does the class happen
+    - at what time is the class
+    - which day is this class
+    - day and time for class
+    - when is this class scheduled
+    - schedule of class
+
+- intent: weather
+  examples: |
+    - what's the weather
+    - i want to know the weather of today
+    - tell me the weather forcast
+    - hows the weather today
+    - weather
+    - whats the temperature for today
+    - whats the weather today
+
+- intent: city
+  examples: |
+    - Delhi
+    - delhi
+    - chandigarh
+    - mohali
+    - mumbai
+    - jaipur
+    - san jose
+    - san francisco
+    - new york
+
+- intent: start
+  examples: |
+    - adi 
+    - Adi 
+    - Adii
+    - Aditya
+    - Divyam
+    - Shuba
+    - Sahu
+
+- intent: announcement
+  examples: |
+    - What are the recent announcements
+    - announcements 
+    - announcements
+    - Tell me the latest announcements
+    - new announcements
+    - new announcements
+    - announcements of this week
+    - show me announcements
+    - show me recent announcements
+    - announcement
+    - announcment
+
+

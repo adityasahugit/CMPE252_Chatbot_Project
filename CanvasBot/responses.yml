@@ -1,0 +1,16 @@
+responses:
+  utter_greet:
+  - text: |
+      Hey, {temp} how can I help you!
+  utter_goodbye:
+  - text: |
+      Thank you. Have a nice day!
+  utter_city:
+  - text: |
+      Which city you want to check for?
+  utter_temp:
+  - text: |
+      Today's temperature is {temp} degree Celcius.
+  utter_start:
+  - text: |
+      Hello! I am Canvas bot! Please share your name? 

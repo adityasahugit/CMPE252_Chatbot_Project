@@ -1,0 +1,56 @@
+rules:
+  - rule: rule_grading
+    steps:
+    - intent: grade
+    - action: action_grade
+
+  - rule: rule_instructor
+    steps:
+    - intent: instructor
+    - action: action_instructor
+
+  - rule: rule_instructor_mail
+    steps:
+    - intent: instructor_mail
+    - action: action_instructor_mail
+      
+  - rule: rule_isa
+    steps:
+    - intent: isa
+    - action: action_isa
+
+  - rule: rule_isa_mail
+    steps:
+    - intent: isa_mail
+    - action: action_isa_mail
+
+  - rule: rule_location
+    steps:
+    - intent: location
+    - action: action_location
+
+  - rule: rule_weather
+    steps:
+    - intent: weather
+    - action: utter_city
+
+  - rule: rule_city
+    steps:
+    - intent: city
+    - action: action_weather_api   
+
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+    - intent: nlu_fallback
+    - action: utter_please_rephrase
+
+  - rule: user name
+    steps:
+    - action: utter_greet
+    - intent: greet
+    - action: action_user
+
+  - rule: announcment rule
+    steps:
+    - intent: announcement
+    - action: action_announcement
