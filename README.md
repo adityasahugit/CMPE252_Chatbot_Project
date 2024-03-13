@@ -1,5 +1,3 @@
-# CMPE252- Chatbot Project
-
 # Canvas-Chatbot
 
 Canvas chatbot is here to help you with all the information regarding your subject. It provides the information grading each subject, the name of the professor, grades, and other information.
