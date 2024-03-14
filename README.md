@@ -130,7 +130,7 @@ Your input ->  Aditya
 
                                         Bot -> Hey, Aditya how can I help you!
 
-Your input ->  Show me the recent announcements
+Your input ->  Show me the name of ISA
 
                                         Bot -> Shubhangi & Sumit
 
@@ -141,7 +141,6 @@ Your input ->  Show me mail for ISA
 Your input ->  Show me some recent announcements
 
                                         Bot -> Dear all, Please fill out the course evaluations and share with us what elements of the course you liked and suggestions for improving the learning experience.  Your feedback is very useful in shaping course format and teaching approaches. Thanks! Regards, Jorjeta                     Dear all, I am out sick and so we will have our class tomorrow (Dec. 1) over Zoom. Regards, Jorjeta        
-Dear all, I need to cancel my office hours today since I am out sick.  Please join my office hours tomorrow or if the times don't work for you, please contact me to set up an appointment. Regards, Jorjeta
 
 #### 4. Multi-turn conversations:
 
