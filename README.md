@@ -22,7 +22,7 @@ Python Version    :         3.8.15
 
 ## Mongo DB usage:
 
-Link: mongodb+srv://adityasahu:Bond007*@cluster0.z9zia26.mongodb.net/test
+Link: mongodb+srv://adityasahu:********@cluster0.z9zia26.mongodb.net/test
 
 
  * MongoDB has been used in this project to store the Username, in the first step, bot asks the user to input its name, so it gets stored in database.
