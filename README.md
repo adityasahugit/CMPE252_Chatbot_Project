@@ -2,7 +2,7 @@
 
 Canvas chatbot is here to help you with all the information regarding your subject. It provides the information grading each subject, the name of the professor, grades, and other information.
 
-Currently supported API calls to retrieve race information are:
+Currently supported API calls to retrieve information are:
   1. Self built API to fetch the information from Canvas to Fetch Grades
   2. Weather API
  
